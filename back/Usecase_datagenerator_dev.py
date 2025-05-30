@@ -1,6 +1,5 @@
 from back.DataGenerator_dev import DataGenerator
 
-
 def create_data_for_annotations_from_input_sentilet_images():
     dg = DataGenerator()
     dg.create_data()
@@ -33,7 +32,7 @@ def main():
 
 
     """ - -----------------------------  DataGenerator images creation and augmantations - ----------------------------------------- """
-    create_data_for_annotations_from_input_sentilet_images()
+    # create_data_for_annotations_from_input_sentilet_images()
 
     # create_masks_from_json_files()
 

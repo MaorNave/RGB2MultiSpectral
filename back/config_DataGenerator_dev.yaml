@@ -2,19 +2,25 @@
 
 functions:
   general_params:
-    root_dir: "C:\\Maor Nanikashvili\\thesis_pipeline\\Pipeline\\input\\data\\sentilet\\R20m"
+    root_dir: "\\input\\data\\sentilet\\R20m"
+    patch_size: 224
+    general_scene_name: 'T36RXV_20240613T081611_20m'
+    main_output_path: "\\results\\sentilet_data"
 
   move_candidates_to_dataset:
-    full_path_to_dataset: "C:\\Maor Nanikashvili\\thesis_pipeline\\Pipeline\\results\\sentilet_data\\full_dataset"
-    full_path_general_input_dir: "C:\\Maor Nanikashvili\\thesis_pipeline\\Pipeline\\results\\sentilet_data\\patches_after_anno"
+    full_path_to_dataset: "\\results\\sentilet_data\\full_dataset"
+    full_path_general_input_dir: "\\results\\sentilet_data\\patches_after_anno"
 
   check_for_seg_classes:
-    folder_path: "C:\\Maor Nanikashvili\\thesis_pipeline\\Pipeline\\results\\sentilet_data\\patches_after_anno\\masks"
+    folder_path: "\\results\\sentilet_data\\patches_after_anno\\masks"
+
+  check_for_k_cluster_number:
+    folder_path: "\\results\\sentilet_data\\patches_after_anno"
 
   create_masks_from_json_files:
-    input_json_folder: "C:\\Maor Nanikashvili\\thesis_pipeline\\Pipeline\\results\\sentilet_data\\patches_anno\\images"
-    output_mask_folder: "C:\\Maor Nanikashvili\\thesis_pipeline\\Pipeline\\results\\sentilet_data\\patches_anno\\anno_masks"
-    labels_dict: "C:\\Maor Nanikashvili\\thesis_pipeline\\Pipeline\\input\\seg_mapping\\sentilet_color_mapper_config.yml"
+    input_json_folder: "\\results\\sentilet_data\\patches_anno\\images"
+    output_mask_folder: "\\results\\sentilet_data\\patches_anno\\anno_masks"
+    labels_dict: "\\input\\seg_mapping\\sentilet_color_mapper_config.yml"
 
 
 

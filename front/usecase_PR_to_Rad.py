@@ -52,7 +52,7 @@ def main():
     """ ------------------------------  PR_TO_RAD PREPROSSES PIPELINE ------------------------------------------ """
 
     # heuristic_object_material_vector()
-    # vgg19_clasiffier()
+    vgg19_clasiffier()
     # heuristic_rgb_material_vector_v1()
 
 

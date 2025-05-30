@@ -1,0 +1,14 @@
+transplanted_materials_counter_test:
+  test_set: True
+  main_frames_path: /mnt/nfs_storage/Repo_data/input/Data/Simulation
+
+cubes_generator:
+  # before run the function notice to fill transplanted_materials_counter_test if test set or not
+  transplant_method: 'raffle' # can be max_score, raffle
+  test_folders_list: [ 'final_ver'
+]
+  materials_rgb_swir: "material_rgb_dict.yml"
+  objects_base_rgb_scores_mat: "scores_mat_objects_dict_after_heur.pickle"
+  obj_seg_rgb: "sentilet_color_mapper_config.yml"
+
+

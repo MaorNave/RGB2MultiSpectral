@@ -1,9 +1,7 @@
 
-""" - -----------------------------  materials_heuristics - ----------------------------------------- """
-### materials hot vector ###
+
 def keys_sycronizore(data):
     new_keys_list = []
-
     for key in data.keys():
         if 'water' in key.lower():
             key += ';waters_and_snow'

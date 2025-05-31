@@ -1,10 +1,12 @@
-transplanted_materials_counter_test:
-  test_set: True
-  main_frames_path: /mnt/nfs_storage/Repo_data/input/Data/Simulation
+general_params:
+  main_pipeline_path: '\\Pipeline\\'
+  results_path: '\\Pipeline\\results'
+  test_path: '\\Pipeline\\test'
+  input_path: '\\Pipeline\\input'
+  parallel_workers: 4
 
 cubes_generator:
-  # before run the function notice to fill transplanted_materials_counter_test if test set or not
-  transplant_method: 'raffle' # can be max_score, raffle
+  transplant_method: 'max_score' # can be max_score, raffle
   test_folders_list: [ 'final_ver'
 ]
   materials_rgb_swir: "material_rgb_dict.yml"

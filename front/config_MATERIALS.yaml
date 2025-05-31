@@ -1,12 +1,18 @@
 
 functions:
+  general_params:
+    main_pipeline_path: '\\Pipeline\\'
+    results_path: '\\Pipeline\\results'
+    test_path: '\\Pipeline\\test'
+    input_path: '\\Pipeline\\input'
+    parallel_workers: 6
 
-  vgg19_clasiffier:
-    models_weights_path: "C:\\Maor Nanikashvili\\thesis_pipeline\\Pipeline\\input\\net_weights\\new_model_weights_lr_0.0001_775.pth"
+  vgg19_classifier:
+    models_weights_path: "\\Pipeline\\input\\net_weights\\new_model_weights_lr_0.0001_775.pth"
     labels_mapping_file_name: 'sentilet_color_mapper_config.yml'
     test_folder_name : 'final_ver'
     num_classes: 6
-    path_to_input_images_folder: "C:\\Maor Nanikashvili\\thesis_pipeline\\Pipeline\\results\\sentilet_data\\full_dataset\\test\\images"
+    path_to_input_images_folder: "\\Pipeline\\results\\sentilet_data\\full_dataset\\test\\images"
 
   heuristic_object_material_vector:
     input_folder: 'seg_mapping'

@@ -1,26 +1,28 @@
 
 functions:
+  general_params:
+    main_pipeline_path: '\\Pipeline\\'
+    results_path: '\\Pipeline\\results'
+    test_path: '\\Pipeline\\test'
+    input_path: '\\Pipeline\\input'
+
   plot_multispectral_rgb:
-    input_cubes_path: "D:\\Maor_Computer_Backup\\Maor Nanikashvili\\thesis_pipeline_march_last_ver\\Pipeline\\results\\cubes_generator\\final_ver\\Max_score\\cubes"
-    gt_cubes_path: "C:\\Maor Nanikashvili\\thesis_pipeline\\Pipeline\\results\\sentilet_data\\full_dataset\\test\\multispectral"
-    rgb_folder_path: "C:\\Maor Nanikashvili\\thesis_pipeline\\Pipeline\\results\\vgg19_clasiffier\\final_ver\\images" #"C:\\Maor Nanikashvili\\thesis_pipeline\\Pipeline\\results\\sentilet_data\\full_dataset\\test\\images"
-    clu_folder_path: "C:\\Maor Nanikashvili\\thesis_pipeline\\Pipeline\\results\\heuristic_rgb_material_vector_v1\\final_ver\\clustered_rgb" #"C:\\Maor Nanikashvili\\thesis_pipeline\\Pipeline\\results\\heuristic_rgb_material_vector_v1\\feb25_test_session\\clustered_rgb"
-    material_rgb_folder_path: "D:\\Maor_Computer_Backup\\Maor Nanikashvili\\thesis_pipeline_march_last_ver\\Pipeline\\results\\cubes_generator\\final_ver\\Max_score\\masks\\rgb_masks"
+    input_cubes_path: "\\Pipeline\\results\\cubes_generator\\final_ver\\Max_score\\cubes"
+    gt_cubes_path: "\\Pipeline\\results\\sentilet_data\\full_dataset\\test\\multispectral"
+    rgb_folder_path: "\\Pipeline\\results\\vgg19_clasiffier\\final_ver\\images"
+    clu_folder_path: "\\Pipeline\\results\\heuristic_rgb_material_vector_v1\\final_ver\\clustered_rgb"
+    material_rgb_folder_path: "\\Pipeline\\results\\cubes_generator\\final_ver\\Max_score\\masks\\rgb_masks"
 
   compare_metrics:
-    gt_folder: "C:\\Maor Nanikashvili\\thesis_pipeline\\Pipeline\\results\\sentilet_data\\full_dataset\\test\\multispectral"
-#    predicted_folder: "D:\\Maor_Computer_Backup\\Maor Nanikashvili\\thesis_pipeline_march_last_ver\\Pipeline\\results\\cubes_generator\\final_ver\\raffle_score\\cubes_text"
-    predicted_folder: "D:\\Maor_Computer_Backup\\Maor Nanikashvili\\thesis_pipeline_march_last_ver\\Arad_python\\results\\ref_rgb_cubes"
-#    predicted_folder: "D:\\Maor_Computer_Backup\\Maor Nanikashvili\\thesis_pipeline_march_last_ver\\SRR_test_session\\single_illumination\\real_results_no_flip\\ref_rgb_cubes"
+    gt_folder: "\\Pipeline\\results\\sentilet_data\\full_dataset\\test\\multispectral"
+    predicted_folder: "\\Pipeline\\results\\cubes_generator\\final_ver\\raffle_score\\cubes_text"
 
   compare_materials_signatures:
-    gt_folder: "C:\\Maor Nanikashvili\\thesis_pipeline\\Pipeline\\results\\sentilet_data\\full_dataset\\test\\multispectral"
-    predicted_folder: "D:\\Maor_Computer_Backup\\Maor Nanikashvili\\thesis_pipeline_march_last_ver\\Pipeline\\results\\cubes_generator\\final_ver\\Max_score\\cubes_text"
-    clu_folder_path: "C:\\Maor Nanikashvili\\thesis_pipeline\\Pipeline\\results\\heuristic_rgb_material_vector_v1\\final_ver\\clustered_rgb"
-    data_dict_folder_path: "D:\\Maor_Computer_Backup\\Maor Nanikashvili\\thesis_pipeline_march_last_ver\\Pipeline\\test\\cubes_generator\\feb25_test_session_hvi_net_enhanced_full_materials_data_final_ver\\Max_score\\cubes_materials_dict"
+    gt_folder: "\\Pipeline\\results\\sentilet_data\\full_dataset\\test\\multispectral"
+    predicted_folder: "\\Pipeline\\results\\cubes_generator\\final_ver\\Max_score\\cubes_text"
+    clu_folder_path: "\\Pipeline\\results\\heuristic_rgb_material_vector_v1\\final_ver\\clustered_rgb"
+    data_dict_folder_path: "\\Pipeline\\test\\cubes_generator\\feb25_test_session_hvi_net_enhanced_full_materials_data_final_ver\\Max_score\\cubes_materials_dict"
 
   compare_metrics_rgb:
-    gt_folder: "C:\\Maor Nanikashvili\\thesis_pipeline\\Pipeline\\results\\vgg19_clasiffier\\final_ver\\images"
-#    predicted_folder: "D:\\Maor_Computer_Backup\\Maor Nanikashvili\\thesis_pipeline_march_last_ver\\Pipeline\\results\\cubes_generator\\final_ver\\raffle_score\\masks\\rgb_masks"
-    predicted_folder: "D:\\Maor_Computer_Backup\\Maor Nanikashvili\\thesis_pipeline_march_last_ver\\Arad_python\\results\\rgb_cubes"
-#    predicted_folder: "D:\\Maor_Computer_Backup\\Maor Nanikashvili\\thesis_pipeline_march_last_ver\\SRR_test_session\\single_illumination\\real_results_no_flip\\rgb_cubes"
+    gt_folder: "\\Pipeline\\results\\vgg19_clasiffier\\final_ver\\images"
+    predicted_folder: "\\Pipeline\\results\\cubes_generator\\final_ver\\raffle_score\\masks\\rgb_masks"

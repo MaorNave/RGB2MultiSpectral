@@ -8,7 +8,7 @@
    Please add the shared Drive directory (containing all required input data such as materials and satellite images) into the root folder of the pipeline.
 
 2. **Drive Link**  
-   [📁 Google Drive Folder – Input Data](https://drive.google.com/drive/folders/1UkzIlgpd1S2eq6uj-W6LJEsrJJDIuGLh?usp=sharing)  
+   [📁 Google Drive Folder – Full Pipeline Data](https://drive.google.com/drive/folders/1UkzIlgpd1S2eq6uj-W6LJEsrJJDIuGLh?usp=sharing)  
    *Note: This link will expire after one year. If access is needed after that, please contact the paper's author.*
 
 ---
@@ -61,7 +61,14 @@ These folders contain:
 - Use the `DataGenerator` class to inject your own dataset for:
   - Training a new model
   - Testing on unseen data
-- The `HVI-CIDNet` and `HVI-low_to_high_light` networks were trained using the `generalization.pth` file. These should be applied to the `train/val/test` folders inside `results/sentilent_data/full_dataset/`.
+- The `HVI-CIDNet` NN were inferenced using the `generalization.pth` file. These should be applied to the `train/val/test` folders inside `results/sentilent_data/full_dataset/`.
+- ```bibtex
+@article{yan2025hvi,
+  title={HVI: A New color space for Low-light Image Enhancement},
+  author={Yan, Qingsen and Feng, Yixu and Zhang, Cheng and Pang, Guansong and Shi, Kangbiao and Wu, Peng and Dong, Wei and Sun, Jinqiu and Zhang, Yanning},
+  journal={arXiv preprint arXiv:2502.20272},
+  year={2025}
+}
 
 ---
 
@@ -75,13 +82,7 @@ To achieve the best performance, apply the pipeline directly on your own input d
 
 If you use this project in your research or publication, please cite the following:
 
-```bibtex
-@article{yan2025hvi,
-  title={HVI: A New color space for Low-light Image Enhancement},
-  author={Yan, Qingsen and Feng, Yixu and Zhang, Cheng and Pang, Guansong and Shi, Kangbiao and Wu, Peng and Dong, Wei and Sun, Jinqiu and Zhang, Yanning},
-  journal={arXiv preprint arXiv:2502.20272},
-  year={2025}
-}
+
 
 
 1. add data from drive shared directory with all input data for the project (materials + satellite images) to pipeline main folder.

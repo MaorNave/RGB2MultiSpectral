@@ -63,18 +63,17 @@ These folders contain:
   - Testing on unseen data
 - The `HVI-CIDNet` NN were inferenced using the `generalization.pth` file. These should be applied to the `train/val/test` folders inside `results/sentilent_data/full_dataset/`.
 - ```bibtex
-@article{yan2025hvi,
+  @article{yan2025hvi,
   title={HVI: A New color space for Low-light Image Enhancement},
   author={Yan, Qingsen and Feng, Yixu and Zhang, Cheng and Pang, Guansong and Shi, Kangbiao and Wu, Peng and Dong, Wei and Sun, Jinqiu and Zhang, Yanning},
   journal={arXiv preprint arXiv:2502.20272},
-  year={2025}
-}
+  year={2025}}
 
 ---
 
 ## 🚀 Recommendation
 
-To achieve the best performance, apply the pipeline directly on your own input data using the full process described above.
+To achieve the best performance, apply HVI-CIDNet directly on your own input data using the full process described above.
 
 ---
 
@@ -82,25 +81,6 @@ To achieve the best performance, apply the pipeline directly on your own input d
 
 If you use this project in your research or publication, please cite the following:
 
-
-
-
-1. add data from drive shared directory with all input data for the project (materials + satellite images) to pipeline main folder.
-2. link to Drive files: https://drive.google.com/drive/folders/1UkzIlgpd1S2eq6uj-W6LJEsrJJDIuGLh?usp=sharing (will be deleted after a year and if the data is needed you can contact the paper author).
-3. on results/sentilent_data/patches_anno there is example for several frames and their annotations to run several function in DataGenerator_dev. (images input , json of annotations data and corresponde output mask of json).
-4. on results/sentilent_data/patches_after_anno - several exmaples of augmanted data after annotating the croped sentilent data.
-5. on results/sentilent_data/metrics - shows metrics for clustering RGB values on all segments of the dataset.
-6. on results/sentilent_data/full_dataset - found only test input data for the pipeline due to lack of drive space. for getting full dataset (train,val, test):1. reach author, 2.run functions from DataGenerator_dev class and the data from results/sentilent_data/full_data will generate all the set locally on your PC.
-7. on results/cubes_generator/Max_score // results/cubes_generator/raffle_score you can find several examples for pipeline results + metrics (metrics are based on full pipeline output - 1000 samples). if you like to get full results for all dataset you can run the pipeline on results/sentilent_data/full_dataset/test and get all the 1000 samples results to your own PC or contact the author.
-8. on each package and each mudule you should run usecase by the functions order to let the pipeline work correctly.
-9. on back package there is no need to run trainning session for semantic NN (only if you like to train on new data).
-10. Datagenerator class is used if you would like to insert you own data for traning and testing sessions (net training and testing pipeline based on the trained net on new data)
-11. HVI-CIDNet, HVI-low_to_high_light was used with use generalization.pth after splitting the data to train, val and test bases - you should run it on the mentioned folders from results/sentilent_data/full_dataset.
-12. for best pipeline result apply the project on your input data images.
-13. @article{yan2025hvi,
-  title={HVI: A New color space for Low-light Image Enhancement},
-  author={Yan, Qingsen and Feng, Yixu and Zhang, Cheng and Pang, Guansong and Shi, Kangbiao and Wu, Peng and Dong, Wei and Sun, Jinqiu and Zhang, Yanning},
-  journal={arXiv preprint arXiv:2502.20272},
-  year={2025}
-}
+```bibtex
+   my own paper citation
 

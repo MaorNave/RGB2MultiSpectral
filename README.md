@@ -85,7 +85,13 @@ These folders contain:
   author={Yan, Qingsen and Feng, Yixu and Zhang, Cheng and Pang, Guansong and Shi, Kangbiao and Wu, Peng and Dong, Wei and Sun, Jinqiu and Zhang, Yanning},
   journal={arXiv preprint arXiv:2502.20272},
   year={2025}}
-
+- `VGG19` by `Pytorch` was used for image segmentation to material classes - with own finetune phase.
+- ```bibtex
+  @article{paszke2019pytorch,
+  title={Pytorch: An imperative style, high-performance deep learning library},
+  author={Paszke, A},
+  journal={arXiv preprint arXiv:1912.01703},
+  year={2019}}
 ---
 
 ## 🚀 Recommendation

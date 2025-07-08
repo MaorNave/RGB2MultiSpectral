@@ -1,7 +1,7 @@
 # RGB2MultiSpectral
 
-# 🌍 Hyperspectral Image Cube Generation Pipeline
-full & official Git repo for paper: link to paper.
+# 🌍 Hyperspectral Image Cube Generation Pipeline - Hybrid Multispectral Reconstruction (HMR)
+HMR full & official Git repo for paper: link to paper.
 
 ## 🖼️ Output Examples
 

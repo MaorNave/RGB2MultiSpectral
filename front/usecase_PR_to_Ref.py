@@ -44,21 +44,21 @@ def compare_metrics_rgb():
 
 
 def main():
-    """ ------------------------------  PR_TO_RAD PREPROSSES PIPELINE ------------------------------------------ """
+    """ ------------------------------  PR_TO_REF PREPROSSES PIPELINE ------------------------------------------ """
 
     # heuristic_object_material_vector()
     # vgg19_classifier()
     # heuristic_rgb_material_vector_v1()
 
-    """ ------------------------------  PR_TO_RAD CUBES GENERATOR PIPELINE ------------------------------------------ """
-    # config = Materials.yaml_loader("config_PRTORAD.yaml")
+    """ ------------------------------  PR_TO_REF CUBES GENERATOR PIPELINE ------------------------------------------ """
+    # config = Materials.yaml_loader("config_PRTOREF.yaml")
     # implementation_method = config['cubes_generator']['transplant_method']
     # if implementation_method == 'max_score':
     #     cubes_generator()
     # elif implementation_method == 'raffle':
     #     cubes_generator_raffle()
 
-    """ ------------------------------  PR_TO_RAD CUBES TEST DATA ------------------------------------------ """
+    """ ------------------------------  PR_TO_REF CUBES TEST DATA ------------------------------------------ """
     # plot_multispectral_rgb_and_texture()
     # compare_materials_signatures()
     # compare_metrics()

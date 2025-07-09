@@ -18,7 +18,7 @@ class Materials():
     A class to handle all processing related to material heuristics, spectral cube generation,
     RGB clustering, YAML/JSON/PKL file handling, and multiprocessing-based cube creation.
     Inputs:
-    - Configuration file named 'config_PRTORAD.yaml' loaded on initialization
+    - Configuration file named 'config_PRTOREF.yaml' loaded on initialization
     Process:
     - Loads configuration paths and stores them for later use
     - Provides utility functions for serialization and folder checks
@@ -29,7 +29,7 @@ class Materials():
 
     def __init__(self):
 
-        with open('config_PRTORAD.yaml') as f:
+        with open('config_PRTOREF.yaml') as f:
             data = yaml.load(f, Loader=SafeLoader)
         f.close()
         # Save loaded configuration and set relevant path mappings

@@ -1,6 +1,23 @@
 # RGB2MultiSpectral
 
-# 🌍 Hyperspectral Image Cube Generation Pipeline
+# 🌍 Hyperspectral Image Cube Generation Pipeline - Hybrid Multispectral Reconstruction (HMR)
+HMR full & official Git repo for paper: link to paper.
+
+## 🖼️ Output Examples
+
+The pipeline produces several types of outputs across its stages:
+
+- **Max score pipeline**:  
+  ![Max score Example](output_examples/max_score/T36RXV_20240613T081611_20m_patch_143_2_cube.png)
+  ![Max score Example](output_examples/max_score/T36RXV_20240613T081611_20m_patch_190_7_cube.png)
+  ![Max score Example](output_examples/max_score/T36RXV_20240613T081611_20m_patch_209_4_cube.png)
+
+- **Raffle score pipeline**:  
+  ![Raffle score Example](output_examples/raffle_score/T36RXV_20240613T081611_20m_patch_20_2_cube.png)
+  ![Raffle score Example](output_examples/raffle_score/T36RXV_20240613T081611_20m_patch_182_5_cube.png)
+  ![Raffle score Example](output_examples/raffle_score/T36RXV_20240613T081611_20m_patch_249_12_cube.png)
+
+📌 Note: These are only samples. Full visual and quantitative outputs are available after running the full pipeline or contacting the author for access to complete datasets.
 
 ## 🔗 Data Access & Requirements
 
@@ -68,7 +85,13 @@ These folders contain:
   author={Yan, Qingsen and Feng, Yixu and Zhang, Cheng and Pang, Guansong and Shi, Kangbiao and Wu, Peng and Dong, Wei and Sun, Jinqiu and Zhang, Yanning},
   journal={arXiv preprint arXiv:2502.20272},
   year={2025}}
-
+- `VGG19` by `Pytorch` was used for image segmentation to material classes - with own finetune phase.
+- ```bibtex
+  @article{paszke2019pytorch,
+  title={Pytorch: An imperative style, high-performance deep learning library},
+  author={Paszke, A},
+  journal={arXiv preprint arXiv:1912.01703},
+  year={2019}}
 ---
 
 ## 🚀 Recommendation
